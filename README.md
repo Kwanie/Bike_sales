@@ -20,10 +20,6 @@ This project transforms raw customer data `bike_buyers` into an **interactive an
 
 ![bike_sales](bikesales.png)
 
-
-
-
-
 ### Data Sources
 The primary dataset used for this analysis is the "bike_buyers.xlsx" file which includes financial indicators `(Income, Home Owner)`, lifestyle factors `(Commute Distance, Cars)`, and demographic identifiers `(Age, Gender, Region)` and `Purchased Bike` for calculating customer conversion rates.
 
@@ -48,9 +44,11 @@ To ensure the data was ready for insightful analysis and visualization, the foll
 ### Exploratory Data Analysis
 EDA involved exploring the data to answer key questions such as:
 - Which **Age Group** has the highest propensity to purchase a bike?
-
+  ![Age Chart](age.png)
 - How does **Income level** correlate with conversion rate?
+  ![Income Chart](income.png)
 - Which **Region and Commute Distance** combination represents the most lucrative niche market?
+   ![Deeper Insights](insights.png)
 
   
 
