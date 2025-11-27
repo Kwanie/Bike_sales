@@ -44,7 +44,8 @@ To ensure the data was ready for insightful analysis and visualization, the foll
 ### Exploratory Data Analysis
 EDA involved exploring the data to answer key questions such as:
 - Which **Age Group** has the highest propensity to purchase a bike?
-  ![Age Chart](age.png)
+
+   ![Age Chart](age.png)
 - How does **Income level** correlate with conversion rate?
   ![Income Chart](income.png)
 - Which **Region and Commute Distance** combination represents the most lucrative niche market?
