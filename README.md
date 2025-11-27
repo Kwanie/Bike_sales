@@ -18,6 +18,11 @@
 ### Project overview
 This project transforms raw customer data `bike_buyers` into an **interactive analytical dashboard** designed to identify the most valuable and high-converting customer segments. The primary goal was to calculate the precise **Purchase Rate (Conversion Rate)** across key demographics to drive focused marketing and sales strategies.
 
+![bike_sales](bikesales.png)
+
+
+
+
 
 ### Data Sources
 The primary dataset used for this analysis is the "bike_buyers.xlsx" file which includes financial indicators `(Income, Home Owner)`, lifestyle factors `(Commute Distance, Cars)`, and demographic identifiers `(Age, Gender, Region)` and `Purchased Bike` for calculating customer conversion rates.
