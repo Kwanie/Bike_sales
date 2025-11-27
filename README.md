@@ -11,6 +11,7 @@
 - [Results](#results)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
+- [Learning Highlight: The Pitfall of Small Sample Size](#learning-highlight-the-pitfall-of-small-sample-size)
 - [References](#references)
 
 
@@ -61,7 +62,7 @@ This analysis heavily utilized advanced features in Excel 2016 and Excel Web to 
  
 - **Independent Analytical Additions (Self-Implemented)**: The following elements were designed to elevate the project beyond a basic exercise:
   - **Metric Calculation**: Transitioned from basic raw counts to the critical **Purchase Rate (% of Row Total)** metric across all visualizations.
-  - **Dynamic KPIs**: Designed a resilient system using the `GETPIVOTDATA` function to create a dynamic Sample Size Card that updates with every filter selection, providing context and validating insights.
+  - **Dynamic KPIs**: Designed a resilient system using the `GETPIVOTDATA` function to create a **dynamic Customer Count Card** that updates with every filter selection, providing context and validating insights.
   - **Advanced Visualization**: Developed a **Deeper Insights Chart** (cross-tabulation of Region and Commute Distance) to reveal high-value niche segments, such as the **Pacific/0-1** Mile Commute group.
   - **Actionable Insights Section**: Added a TextBox with **"Key Findings & Recommendations"** to the dashboard to clearly summarize the business value and actionable conclusions derived from the data.
     
@@ -91,13 +92,24 @@ The findings identify not just who to target, but where and how to allocate reso
 -  **Visualization Workaround (Hiding Data)**: To create the clean, focused visualization required to display only the **Purchase Rate (Yes)** columns in the PivotChart, a creative workaround was necessary. The underlying **'No'** column in the PivotTable had to be manually colored white.
 -  **Aesthetic Compromise**: While this workaround successfully filtered the focus to the desired metric, it caused minor gridline misalignment in the resulting PivotTable display.
 -  **Result Integrity**: Crucially, despite these visual and procedural compromises, the **data integrity and mathematical accuracy of all charts remained correct and fully understandable**, successfully delivering the intended analytical insights.
-  
+
+
+### Learning Highlight: The Pitfall of Small Sample Size
+The most critical takeaway from this project was the realization that a high **Conversion Rate** does not automatically equate to a valuable target segment.
+
+Initially, cross-tabulating certain niches yielded segments with a seemingly perfect 100% **Purchase Rate**. While incredibly exciting, a necessary contextual review revealed these segments often contained fewer than 10 total customers. This led to the core analytical lesson:
+
+   **High Rate, Low Count**: Recommendations cannot be based on high-conversion rates from an statistically insignificant sample size, as one non-buyer would drastically skew the percentage.
+
+This finding directly motivated the independent development of the **Dynamic Customer Count Card** (linked via `GETPIVOTDATA`). The card now serves as an immediate visual validator for all Slicer selections, ensuring that all final **Key Findings and Recommendations** are grounded in segments with a robust and meaningful sample count.  
 
 
 ### References
 [Alex The Analyst](https://youtu.be/opJgMj1IUrc?si=lAo1_ek0q6w1I51O)
 
 [Documentation](https://youtu.be/0N9xekdKCwk?si=pYb1LZVcvS0ud96I)
+
+
 
     
     
